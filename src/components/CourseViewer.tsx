@@ -82,7 +82,7 @@ const CourseViewer = ({ course, lessonProgress = [], setLessonProgress }: Props)
 
       <div>
         {course.lessons.map(lesson => (
-          <a
+          <div
             onClick={() => setActiveLesson(lesson)}
             key={lesson.id}
             className={clsx({
@@ -113,7 +113,7 @@ const CourseViewer = ({ course, lessonProgress = [], setLessonProgress }: Props)
               </h2>
               <p className='text-md italic text-slate-600 my-1 truncate'>{lesson.description}</p>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </div>

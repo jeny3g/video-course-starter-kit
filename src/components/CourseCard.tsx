@@ -1,7 +1,7 @@
 import { Course, Lesson, Video } from "@prisma/client";
 import Link from 'next/link'
-import Image from 'next/future/image'
 import Heading from './Heading'
+import Image from "next/image";
 
 type Props = {
   isAdmin: boolean;
@@ -16,8 +16,7 @@ const CourseCard = ({ course, isAdmin }: Props) => {
   const href = isAdmin ? `/admin/courses/${course.id}` : `/courses/${course.id}`
   return (
     <>
-      <Link href={href}>
-        <a className='w-full border rounded-lg transition shadow-sm hover:shadow-md cursor-pointer'>
+      <Link href={href} className='w-full border rounded-lg transition shadow-sm hover:shadow-md cursor-pointer' >
           {course.lessons[0]?.video?.publicPlaybackId && (
             <Image
               className="w-full"
@@ -38,7 +37,6 @@ const CourseCard = ({ course, isAdmin }: Props) => {
               {course.description}
             </p>
           </div>
-        </a>
       </Link>
     </>
   );

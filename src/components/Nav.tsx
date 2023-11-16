@@ -17,25 +17,22 @@ const Nav = () => {
       <nav className='p-4 mb-6 flex items-center space-x-3'>
         <ul className='flex gap-2'>
           <li>
-            <Link href="/">
-              <a className='underline'>
+            <Link href="/" className='underline'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                 </svg>
-              </a>
             </Link>
           </li>
           {session && (
             <li>
-              <Link href="/admin">
-                <a className='underline'>Admin</a>
+              <Link href="/admin" className='underline'>
+                Admin
               </Link>
             </li>
           )}
         </ul>
         <div className='flex-1 flex justify-center'>
-          <Link href="/" passHref>
-            <a className="flex justify-center items-center">
+          <Link href="/" className="flex justify-center items-center" passHref>
               <Image
                 alt="Video course starter kit"
                 height={32}
@@ -45,7 +42,6 @@ const Nav = () => {
               <span className="inline-block ml-3 font-medium truncate text-slate-700">
                 Video Course Starter Kit
               </span>
-            </a>
           </Link>
         </div>
         <div className='text-right text-sm'>

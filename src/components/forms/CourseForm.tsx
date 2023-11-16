@@ -4,6 +4,7 @@ import TextAreaInput from './TextAreaInput';
 import SubmitInput from './SubmitInput';
 import Checkbox from "./Checkbox";
 import { Course } from "@prisma/client";
+import Link from "next/link";
 
 export type Inputs = {
   name: string;
@@ -26,7 +27,7 @@ const CourseForm = ({ course, onSubmit, isLoading }: Props) => {
         <TextAreaInput label='Description' name='description' options={{ required: true }} />
         <Checkbox label='Publish' name='published' />
         <p className="text-slate-500 text-sm mb-6">
-          <a href='https://github.com/muxinc/video-course-starter-kit' target='_blank' rel='noreferrer' className='underline'>Fork this repo</a>
+          <Link href='https://github.com/muxinc/video-course-starter-kit' target='_blank' rel='noreferrer' className='underline'>Fork this repo</Link>
           {" "}
           to publish your own courses
         </p>

@@ -65,8 +65,7 @@ const AdminCourseEdit: NextPage<AdminCourseEditPageProps> = ({ course }) => {
             <>
               {
                 course.lessons.map(lesson => (
-                  <Link key={lesson.id} href={`/admin/courses/${course.id}/lessons/${lesson.id}`}>
-                    <a className='flex gap-4 border border-gray-200 rounded-lg mb-6 cursor-pointer'>
+                  <Link key={lesson.id} href={`/admin/courses/${course.id}/lessons/${lesson.id}`} className='flex gap-4 border border-gray-200 rounded-lg mb-6 cursor-pointer'>
                       {lesson.video?.publicPlaybackId && (
                         <Image
                           src={`https://image.mux.com/${lesson.video.publicPlaybackId}/thumbnail.jpg?width=640`}
@@ -79,7 +78,6 @@ const AdminCourseEdit: NextPage<AdminCourseEditPageProps> = ({ course }) => {
                       <div className='py-2'>
                         <Heading as='h5'>{lesson.name}</Heading>
                       </div>
-                    </a>
                   </Link>
                 ))
               }
