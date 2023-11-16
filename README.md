@@ -1,6 +1,6 @@
 # Video Course Starter Kit
 
-This project demonstrates how you can use Next.js and Mux to build your own video course platform. You might use this repo as a starting point for building your own membership-gated video course platform. 
+This project demonstrates how you can use Next.js and Mux to build your own video course platform. You might use this repo as a starting point for building your own membership-gated video course platform.
 
 Feel free to browse the source code to see how you can use Mux's video APIs to upload, encode, and playback videos in your Next.js app.
 
@@ -161,3 +161,6 @@ The [Prisma extension](https://marketplace.visualstudio.com/items?itemName=Prism
 ## Questions? Comments?
 
 Tweet us [@MuxHQ](https://twitter.com/muxhq) or email help@mux.com with anything you need help with.
+
+
+npx prisma db push --preview-feature
