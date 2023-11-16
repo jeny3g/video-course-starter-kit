@@ -1,4 +1,4 @@
-import CourseCard from 'components/CourseCard'
+import CourseCard from '@/components/CourseCard'
 import type { Course, Lesson, Video } from "@prisma/client"
 
 type Props = {

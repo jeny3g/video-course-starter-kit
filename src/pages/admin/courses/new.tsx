@@ -4,8 +4,8 @@ import { useRouter } from 'next/router'
 import { useMutation } from '@tanstack/react-query'
 import toast from 'react-hot-toast';
 
-import Heading from 'components/Heading';
-import CourseForm, { Inputs } from 'components/forms/CourseForm';
+import Heading from '@/components/Heading';
+import CourseForm, { Inputs } from '@/components/forms/CourseForm';
 
 type CourseCreateResult = {
   id: number;

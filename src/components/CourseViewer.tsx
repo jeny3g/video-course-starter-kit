@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router'
 import Image from 'next/future/image'
 import type { Course, Lesson, Video } from "@prisma/client"
-import Heading from 'components/Heading'
-import EmptyState from 'components/EmptyState'
+import Heading from '@/components/Heading'
+import EmptyState from '@/components/EmptyState'
 import MuxPlayer from "@mux/mux-player-react/lazy";
-import formatDuration from 'utils/formatDuration'
+import formatDuration from @/utils/formatDuration'
 import clsx from 'clsx';
 import type { UserLessonProgress } from '@prisma/client'
 
@@ -121,5 +121,3 @@ const CourseViewer = ({ course, lessonProgress = [], setLessonProgress }: Props)
 };
 
 export default CourseViewer;
-
-

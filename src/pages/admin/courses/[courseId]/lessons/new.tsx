@@ -2,7 +2,7 @@ import { useState } from 'react';
 import type { NextPage, GetServerSideProps } from 'next'
 import { useForm, SubmitHandler, FormProvider } from "react-hook-form";
 import { useRouter } from 'next/router'
-import { prisma } from 'utils/prisma'
+import { prisma } from '@/utils/prisma'
 
 import Mux from '@mux/mux-node';
 const { Video } = new Mux(process.env.MUX_TOKEN_ID, process.env.MUX_TOKEN_SECRET);
@@ -14,11 +14,11 @@ import type { Session } from 'next-auth'
 import { useMutation } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
 
-import Heading from 'components/Heading';
-import TextInput from 'components/forms/TextInput';
-import TextAreaInput from 'components/forms/TextAreaInput';
-import Field from 'components/forms/Field';
-import SubmitInput from 'components/forms/SubmitInput';
+import Heading from '@/components/Heading';
+import TextInput from '@/components/forms/TextInput';
+import TextAreaInput from '@/components/forms/TextAreaInput';
+import Field from '@/components/forms/Field';
+import SubmitInput from '@/components/forms/SubmitInput';
 
 type Inputs = {
   name: string;

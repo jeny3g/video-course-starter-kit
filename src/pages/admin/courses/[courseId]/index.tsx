@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { prisma } from 'utils/prisma'
+import { prisma } from '@/utils/prisma'
 import { useSession } from "next-auth/react"
 import { GetServerSideProps } from 'next'
 import { authOptions } from 'pages/api/auth/[...nextauth]'
@@ -8,10 +8,10 @@ import type { Session } from 'next-auth'
 import type { Course, Lesson, Video } from '@prisma/client'
 import Link from 'next/link'
 import Image from 'next/future/image'
-import CourseForm, { Inputs } from 'components/forms/CourseForm';
+import CourseForm, { Inputs } from '@/components/forms/CourseForm';
 import { SubmitHandler } from "react-hook-form";
-import Heading from 'components/Heading';
-import Button from 'components/Button';
+import Heading from '@/components/Heading';
+import Button from '@/components/Button';
 import toast from 'react-hot-toast';
 import { useMutation } from '@tanstack/react-query'
 

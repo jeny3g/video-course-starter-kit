@@ -3,15 +3,15 @@ import { useState } from 'react'
 import type { GetServerSideProps } from 'next'
 import type { Course, Lesson, Video } from "@prisma/client"
 import muxBlurHash from "@mux/blurhash";
-import { prisma } from 'utils/prisma'
+import { prisma } from '@/utils/prisma'
 import { authOptions } from 'pages/api/auth/[...nextauth]'
 import { unstable_getServerSession } from "next-auth/next"
 import { useSession } from "next-auth/react"
 import Link from 'next/link'
 import type { NextPageWithLayout } from 'pages/_app'
-import CourseViewer from 'components/CourseViewer'
-import Nav from 'components/Nav'
-import Banner from 'components/Banner'
+import CourseViewer from '@/components/CourseViewer'
+import Nav from '@/components/Nav'
+import Banner from '@/components/Banner'
 
 type VideoWithPlaceholder = Video & { placeholder?: string }
 

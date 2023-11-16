@@ -1,5 +1,5 @@
 import type { NextPage, GetServerSideProps } from 'next'
-import { prisma } from 'utils/prisma'
+import { prisma } from '@/utils/prisma'
 import { useSession } from "next-auth/react"
 import { authOptions } from 'pages/api/auth/[...nextauth]'
 import { unstable_getServerSession } from "next-auth/next"
@@ -8,8 +8,8 @@ import type { Lesson, Video } from '@prisma/client'
 import { useRouter } from 'next/router'
 import { SubmitHandler } from "react-hook-form";
 import MuxPlayer from "@mux/mux-player-react/lazy";
-import LessonForm, { Inputs } from 'components/forms/LessonForm'
-import Button from 'components/Button'
+import LessonForm, { Inputs } from '@/components/forms/LessonForm'
+import Button from '@/components/Button'
 import toast from 'react-hot-toast';
 import { useMutation } from '@tanstack/react-query'
 

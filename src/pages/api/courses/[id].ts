@@ -1,4 +1,4 @@
-import { prisma } from 'utils/prisma'
+import { prisma } from '@/utils/prisma'
 import type { NextApiRequest, NextApiResponse } from 'next'
 import type { Course } from '@prisma/client'
 import { unstable_getServerSession } from "next-auth/next"

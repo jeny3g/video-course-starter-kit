@@ -1,6 +1,6 @@
 import Image from 'next/future/image'
 import type { Course, Lesson, Video } from "@prisma/client"
-import Heading from 'components/Heading'
+import Heading from '@/components/Heading'
 import ReactMarkdown from 'react-markdown'
 
 type Props = {
@@ -47,5 +47,3 @@ const CourseOverview = ({ course }: Props) => {
 };
 
 export default CourseOverview;
-
-

@@ -1,10 +1,10 @@
 import type { NextPage, GetStaticProps, GetServerSideProps } from 'next'
 import type { Course, Lesson, Video } from "@prisma/client"
-import { prisma } from 'utils/prisma'
-import { authOptions } from 'pages/api/auth/[...nextauth]'
+import { prisma } from '@/utils/prisma'
+import { authOptions } from '@/pages/api/auth/[...nextauth]'
 import { unstable_getServerSession } from "next-auth/next"
-import Heading from 'components/Heading'
-import CourseGrid from 'components/CourseGrid'
+import Heading from '@/components/Heading'
+import CourseGrid from '@/components/CourseGrid'
 
 type HomePageProps = {
   courses: (Course & {
